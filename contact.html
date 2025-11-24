@@ -87,7 +87,7 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="destinations.html">Destinations</a>
+                        <a class="nav-link" href="destinations.html">Destinations</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="activities.html">Activities</a>
@@ -96,74 +96,106 @@
                         <a class="nav-link" href="lodging.html">Lodging</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Consultation</a>
+                        <a class="nav-link active" aria-current="page" href="contact.html">Consultation</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-       <div class="container my-5">
-
-        <!-- initialize feature 1 -->
-        <div class="card shadow-lg mb-5 rounded-4">
-            <div class="card-body p-4">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-5">
-                        <img src="Images/beach-2580656_1280.jpg" class="img-fluid rounded-3 shadow-sm" alt="Climb Mighty Taniti'tiki">
+  <style>
+        .rounded-pill { border-radius: 50rem !important; }
+    </style>
+</head>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-9 col-lg-7 col-xl-6">
+                <!-- Contact Form Card -->
+                <div class="card shadow-lg rounded-4 border-0">
+                    <div class="card-header bg-primary text-white text-center rounded-top-4 py-4">
+                        <h1 class="display-6 fw-bold mb-0">Book Your Taniti Consultation</h1>
+                        <p class="lead mb-0 mt-2">Let's craft your perfect island itinerary.</p>
                     </div>
-                    <div class="col-md-7">
-                        <h2 class="h3 fw-bold text-dark">Mighty Mt. Taniti'tiki</h2>
-                        <p class="lead">Visit Taniti's famous Taniti'tiki mountain, home of the great spirit Tititiki!<p>
-                        <p>Our guided treks are perfect for hikers of any skill level, walk like a Tanitian all the way to the summit of the Mighty Mt. Taniti'tiki, and commune with our protective island spirit of Tititiki! Upon return, become an honorary Taniti'an for this feat.</p>
+                    <div class="card-body p-4 p-md-5">
+                        <form class="row g-4" id="consultationForm">
+                            <!-- Full Name -->
+                            <div class="col-12">
+                                <label for="fullName" class="form-label fw-semibold">Full Name</label>
+                                <input type="text" class="form-control form-control-lg rounded-pill" id="fullName" placeholder="Jane Doe" required>
+                            </div>
+
+                            <!-- Email Address -->
+                            <div class="col-12">
+                                <label for="email" class="form-label fw-semibold">Email Address</label>
+                                <input type="email" class="form-control form-control-lg rounded-pill" id="email" placeholder="jane.doe@example.com" required>
+                            </div>
+
+                            <!-- Phone Number -->
+                            <div class="col-12">
+                                <label for="phone" class="form-label fw-semibold">Phone Number</label>
+                                <input type="tel" class="form-control form-control-lg rounded-pill" id="phone" placeholder="+1 (555) 555-5555">
+                            </div>
+
+                            <!-- Destination Interest Dropdown -->
+                            <div class="col-12">
+                                <label for="interest" class="form-label fw-semibold">Primary Area of Interest</label>
+                                <select class="form-select form-select-lg rounded-pill" id="interest" required>
+                                    <option selected disabled value="">Choose an option...</option>
+                                    <option>Conquer Mighty Mt. Taniti'tiki</option>
+                                    <option>Relax on Taniti'an Beaches</option>
+                                    <option>Historic and Cultural Experiences</option>
+                                    <option>Custom Multi-Day Itinerary</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Additional Details Textarea -->
+                            <div class="col-12">
+                                <label for="details" class="form-label fw-semibold">Tell us more about your ideal trip:</label>
+                                <textarea class="form-control rounded-4" id="details" rows="4" placeholder="e.g., I'm interested in a 7-day trip in June with a focus on sustainable travel..."></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-success btn-lg w-100 rounded-pill" onclick="showToast(event)">
+                                    Submit Request
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- initialize feature 2 -->
-        <div class="card shadow-lg mb-5 rounded-4">
-            <div class="card-body p-4">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-7 order-md-2">
-                        <h2 class="h3 fw-bold text-dark">Eastern Taniti White Sands</h2>
-                        <p class="lead">The sun rises in the east, enjoy it from the beautiful white sands of Taniti's eastern port, Kahlua!</p>
-                        <p>Tourists and locals alike cannot resist the allure of Kahlua! Beautiful white sands and clear waters make for the perfect island getaway experience.</p>
-                    </div>
-                    <div class="col-md-5 order-md-1">
-                        <img src="Images/lagoon-911963_1280.jpg" class="img-fluid rounded-3 shadow-sm" alt="A beautiful Taniti'an Coastline">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- initalize feature 3 -->
-        <div class="card shadow-lg mb-5 rounded-4">
-            <div class="card-body p-4">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-5">
-                        <img src="Images/maldives-4703551_1280.jpg" class="img-fluid rounded-3 shadow-sm" alt="A remote getaway on the high seas">
-                    </div>
-                    <div class="col-md-7">
-                        <h2 class="h3 fw-bold text-dark">Offshore Colonies for those who desire the "real" Tanitian experience</h2>
-                        <p class="lead">Haven't seen enough of the "real" Taniti? If you're brave enough, venture out into our tropical waters and visit our famous offshore getaways.</p>
-                        <p>Taniti has always been by the sea, and thus has always had a symbotic relationship with the waters which gave us life! Are you up to the challenge?</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
 
-
-    <!-- initalize travel consultation pitch -->
-    <section id="about" class="bg-light py-5">
-        <div class="container text-center">
-            <h2 class="fw-bold mb-3">Ready to Plan Your Escape?</h2>
-            <p class="lead mb-4">We handle all the details so you can focus on making memories.</p>
-            <a href="#" class="btn btn-success btn-lg">Book a Consultation</a>
+    <!-- TOAST CONTAINER (Confirmation Flag) -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast text-bg-success border-0 rounded-4" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="5000">
+            <div class="d-flex p-3">
+                <div class="toast-body fw-semibold">
+                    ✅ Success! Your request has been sent. We will contact you shortly.
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
         </div>
-    </section>
+    </div>
+
+    <!-- Custom JS for Toast Functionality -->
+    <script>
+        function showToast(event) {
+            // 1. Stop the form from submitting and reloading the page
+            event.preventDefault(); 
+            
+            // 2. Clear the form (good user experience)
+            document.getElementById('consultationForm').reset();
+
+            // 3. Get the Toast element
+            const toastEl = document.getElementById('liveToast');
+            
+            // 4. Initialize and show the toast
+            const toast = new bootstrap.Toast(toastEl);
+            toast.show();
+        }
+    </script>
 
     <!-- initialize footer -->
     <footer id="contact" class="footer">
