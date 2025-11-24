@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- initalize HTML page-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visit Tropical Taniti!</title>
-    <!-- Load Bootstrap 5 CSS via CDN -->
+    <!-- intialize Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Custom styles to enhance Bootstrap defaults */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8f9fa; /* Light gray background */
+            background-color: #f8f9fa;
         }
-        /* Style for the carousel to ensure full width and height */
+        /* initialize carousel for slideshow */
         .carousel-item {
-            height: 1000px; /* Standard hero height */
+            height: 1000px;
             background-size: cover;
             background-position: center center;
             position: relative;
@@ -30,7 +30,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for readability */
+            background-color: rgba(0, 0, 0, 0.4);
             padding: 0;
         }
         .carousel-caption h5, .carousel-caption p {
@@ -66,7 +66,7 @@
             border-color: #004085;
         }
         .footer {
-            background-color: #343a40; /* Dark background for footer */
+            background-color: #343a40;
             color: #ffffff;
             padding: 3rem 0;
         }
@@ -74,7 +74,7 @@
 </head>
 <body>
 
-    <!-- 1. Navigation Bar -->
+    <!-- initialize Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">Walk like a Taniti'an</a>
@@ -103,48 +103,45 @@
         </div>
     </nav>
 
-    <!-- 2. Hero Section: Bootstrap Carousel -->
     <header id="home">
         <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-            <!-- Carousel Indicators -->
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
         
-            <!-- Carousel Slides -->
             <div class="carousel-inner">
                 
-                <!-- Slide 1: General Welcome -->
+                <!-- Carousel 1/3 -->
                 <div class="carousel-item active" style="background-image: url('Images/bay-1867798_1280.jpg');">
                     <div class="carousel-caption">
                         <h5 class="display-4">Explore the World, Worry-Free</h5>
                         <p class="lead mb-4">Discover curated tours and breathtaking destinations chosen just for you.</p>
-                        <a href="#destinations" class="btn btn-primary btn-lg">View Our Top Tours</a>
+                        <a href="destinations.html" class="btn btn-primary btn-lg">View Our Top Tours</a>
                     </div>
                 </div>
 
-                <!-- Slide 2: Mountain Focus -->
+                <!-- Carousel 2/3 -->
                 <div class="carousel-item" style="background-image: url('Images/beach-2580656_1280.jpg');">
                     <div class="carousel-caption">
                         <h5 class="display-4">Conquer the Highest Peaks</h5>
                         <p class="lead mb-4">Guided treks and thrilling climbs for every skill level.</p>
-                        <a href="#destinations" class="btn btn-primary btn-lg">Find a Mountain Trek</a>
+                        <a href="destinations.html" class="btn btn-primary btn-lg">Find a Mountain Trek</a>
                     </div>
                 </div>
 
-                <!-- Slide 3: Beach Focus -->
+                <!-- Carousel 3/3 -->
                 <div class="carousel-item" style="background-image: url('Images/lagoon-911963_1280.jpg');">
                     <div class="carousel-caption">
                         <h5 class="display-4">Relax on Tropical Beaches</h5>
                         <p class="lead mb-4">Sun-kissed sands and turquoise waters are calling your name.</p>
-                        <a href="#destinations" class="btn btn-primary btn-lg">Book Your Retreat</a>
+                        <a href="destinations.html" class="btn btn-primary btn-lg">Book Your Retreat</a>
                     </div>
                 </div>
             </div>
         
-            <!-- Carousel Controls (Previous/Next) -->
+            <!-- initialize Carousel buttons -->
             <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -156,14 +153,14 @@
         </div>
     </header>
 
-    <!-- 3. Main Content: Destination Cards -->
+    <!-- initalize page specific sub-cards -->
     <section id="destinations" class="py-5">
         <div class="container">
             <h2 class="text-center mb-5 fw-bold">Featured Destinations</h2>
             
             <div class="row g-4">
                 
-                <!-- Destination Card 1 -->
+                <!-- sub-card 1 -->
                 <div class="col-md-4">
                     <div class="card shadow">
                         <img src="https://placehold.co/600x400/28a745/ffffff?text=Mountain+Trek" 
@@ -173,12 +170,12 @@
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Alpine Majesty</h5>
                             <p class="card-text text-muted">A challenging but rewarding trek through the European Alps. Perfect for experienced hikers.</p>
-                            <a href="#" class="btn btn-outline-primary">View Details</a>
+                            <a href="destinations.html" class="btn btn-outline-primary">View Details</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Destination Card 2 -->
+                <!-- sub-card 2 -->
                 <div class="col-md-4">
                     <div class="card shadow">
                         <img src="https://placehold.co/600x400/ffc107/000000?text=Tropical+Beach" 
@@ -188,12 +185,12 @@
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Sun-Kissed Shores</h5>
                             <p class="card-text text-muted">Relax on pristine beaches and dive into crystal-clear waters in the Caribbean.</p>
-                            <a href="#" class="btn btn-outline-primary">View Details</a>
+                            <a href="destinations.html" class="btn btn-outline-primary">View Details</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Destination Card 3 -->
+                <!-- sub-card 3 -->
                 <div class="col-md-4">
                     <div class="card shadow">
                         <img src="https://placehold.co/600x400/17a2b8/ffffff?text=Historic+City" 
@@ -203,7 +200,7 @@
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Ancient Capitals</h5>
                             <p class="card-text text-muted">Explore the history and culture of Europe's most beautiful and ancient cities.</p>
-                            <a href="#" class="btn btn-outline-primary">View Details</a>
+                            <a href="destinations.html" class="btn btn-outline-primary">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -211,7 +208,7 @@
         </div>
     </section>
 
-    <!-- 4. Simple Call to Action (CTA) Section -->
+    <!-- initalize travel consultation pitch -->
     <section id="about" class="bg-light py-5">
         <div class="container text-center">
             <h2 class="fw-bold mb-3">Ready to Plan Your Escape?</h2>
@@ -220,7 +217,7 @@
         </div>
     </section>
 
-    <!-- 5. Footer -->
+    <!-- initialize footer -->
     <footer id="contact" class="footer">
         <div class="container">
             <div class="row">
@@ -246,7 +243,7 @@
         </div>
     </footer>
 
-    <!-- Load Bootstrap 5 JS Bundle via CDN -->
+    <!-- Bootstrap 5 JS Bundle via CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
